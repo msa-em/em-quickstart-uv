@@ -1,6 +1,13 @@
 # slim uv base image
 FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
 
+# install deps
+COPY ./requirements.in .
+RUN uv venv /opt/venv
+ENV VIRTUAL_ENV=/opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+RUN uv pip install -r requirements.in
+
 # create user with a home directory
 ARG NB_USER
 ARG NB_UID
@@ -14,9 +21,5 @@ RUN adduser --disabled-password \
 WORKDIR ${HOME}
 USER ${USER}
 
-# safe to use system, since container already isolated
-ENV UV_SYSTEM_PYTHON=1
-COPY ./requirements.in .
-RUN uv pip install -r requirements.in
-
+# run jupyterlab
 CMD ["uv", "run", "jupyter", "lab"]
