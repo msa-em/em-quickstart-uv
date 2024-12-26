@@ -1,14 +1,11 @@
 # slim uv base image
 FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
 
-# install deps
+# install deps (system is safe, already isolated)
 COPY ./requirements.in .
-RUN uv venv /opt/venv
-ENV VIRTUAL_ENV=/opt/venv
-ENV PATH="/opt/venv/bin:$PATH"
-RUN uv pip install -r requirements.in
+RUN uv pip install --system -r requirements.in
 
-# create user with a home directory
+# create user with a home directory for binder
 ARG NB_USER
 ARG NB_UID
 ENV USER ${NB_USER}
