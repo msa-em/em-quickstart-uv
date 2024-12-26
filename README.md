@@ -14,7 +14,7 @@ This quickstart guide was developed by [Colin Ophus](mailto:cophus@gmail.com) an
 > First, ask one of the organization members to give you `write` access to the forked repo.
 
 > [!WARNING]
-> In what follows and the configuration files, you will see references to `change-to-repo-name`, which you should replace with the repo name. E.g. this article would be `em-quickstart-uv`.
+> In what follows and the configuration files, you will see references to `em-quickstart-uv`, which you should replace with the repo name.
 
 > [!WARNING]
 > This quickstart guide assumes use of the `uv` python package manager. You can install `uv` on your platform following the instructions [here](https://docs.astral.sh/uv/getting-started/installation/). Trust us, you won't regret it.

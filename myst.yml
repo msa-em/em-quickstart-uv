@@ -1,7 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  id: msa-em-change-this-to-repo-name-1
+  id: msa-em-quickstart-uv
   title: Elemental Microscopy Quickstart
   description: A minimal repository to be used as quickstart for the Elemental Microscopy journal
   short_title: EM Quickstart
@@ -9,12 +9,12 @@ project:
     - Keyword One
     - Keyword Two
     - Spell Out Acronyms
-  github: https://github.com/msa-em/change-this-to-repo-name
+  github: https://github.com/msa-em/em-quickstart-uv
   jupyter: true
   #  jupyter:
   #    binder:
   #      url: https://y2j74k9mn0bz.curvenote.dev/services/binder/
-  #      repo: msa-em/change-this-to-repo-name
+  #      repo: msa-em/em-quickstart-uv
   #  jupyter:
   #    server:
   #      url: 'http://localhost:8888'
