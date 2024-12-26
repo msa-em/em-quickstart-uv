@@ -1,9 +1,9 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  id: msa-em-change-this-to-repo-name-followed-by-the-number-1
+  id: msa-em-change-this-to-repo-name-1
   title: Elemental Microscopy Quickstart
-  description: A minimal repository to be used as quickstart for the Elemental Microscopy journal.
+  description: A minimal repository to be used as quickstart for the Elemental Microscopy journal
   short_title: EM Quickstart
   keywords:
     - Keyword One
